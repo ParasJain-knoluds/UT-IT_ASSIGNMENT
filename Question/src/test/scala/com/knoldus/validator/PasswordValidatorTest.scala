@@ -3,7 +3,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 
 class PasswordValidatorTest extends AnyFlatSpec {
   "password" should "be invalid as it contains space" in {
-    val password = new PasswordValidator("Paras2@ jain")
+    val password = new PasswordValidator("Paras99@ jain")
     assert(!password.passwordIsValid)
   }
 
@@ -13,32 +13,32 @@ class PasswordValidatorTest extends AnyFlatSpec {
   }
 
   "password" should "be invalid as the length is less than 8" in {
-    val password = new PasswordValidator("Paras2$")
+    val password = new PasswordValidator("Paras6$")
     assert(!password.passwordIsValid)
   }
 
   "password" should "be invalid as the length is more than 15" in {
-    val password = new PasswordValidator("Paras@jain001589")
+    val password = new PasswordValidator("Paras@jain008976")
     assert(!password.passwordIsValid)
   }
 
   "password" should "be invalid as it does not contains any lowercase letter" in {
-    val password = new PasswordValidator("PARAS@JAIN2")
+    val password = new PasswordValidator("PARAS@JAIN9")
     assert(!password.passwordIsValid)
   }
 
   "password" should "be invalid as it does not contains any uppercase letter" in {
-    val password = new PasswordValidator("paras@jain2")
+    val password = new PasswordValidator("paras@jain9")
     assert(!password.passwordIsValid)
   }
 
   "password" should "be invalid as it does not contains any special character" in {
-    val password = new PasswordValidator("ParasJain2")
+    val password = new PasswordValidator("ParasJain9")
     assert(!password.passwordIsValid)
   }
 
   "password" should "be valid" in {
-    val password = new PasswordValidator("Paras@Jain97")
+    val password = new PasswordValidator("Paras@Jain59")
     assert(password.passwordIsValid)
   }
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="UT,UT-IT-ParasJain,UT_IT,ut-it_assignment_5513" />
+  </component>
+</project>

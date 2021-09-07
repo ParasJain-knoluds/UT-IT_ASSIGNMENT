@@ -11,7 +11,7 @@ class CompanyReadDtoTest extends AnyFlatSpec {
 
   "Company" should "not exist" in {
     val companyReadDto = new CompanyReadDto
-    val result = companyReadDto.getCompanyByName("Google")
+    val result = companyReadDto.getCompanyByName("Facebook")
     assert(result.isEmpty)
   }
 }

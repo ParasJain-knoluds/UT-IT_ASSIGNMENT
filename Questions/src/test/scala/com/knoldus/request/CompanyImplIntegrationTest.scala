@@ -20,7 +20,7 @@ class CompanyImplIntegrationTest extends AnyFlatSpec {
   }
 
   "Company" should "not be created as email id is not valid" in {
-    val googleCompany: Company = Company("Google", "google@gmail", "Gurugram")
+    val googleCompany: Company = Company("Facebook", "Facebook@gmail", "Noida")
 
     val companyImpl = new CompanyImpl(companyValidator)
     val result = companyImpl.createCompany(googleCompany)
@@ -36,7 +36,7 @@ class CompanyImplIntegrationTest extends AnyFlatSpec {
   }
 
   "Company" should "be created" in {
-    val googleCompany: Company = Company("Google", "google@gmail.com", "Gurugram")
+    val googleCompany: Company = Company("Facebook", "Facebook@gmail.com", "Noida")
 
     val companyImpl = new CompanyImpl(companyValidator)
     val result = companyImpl.createCompany(googleCompany)

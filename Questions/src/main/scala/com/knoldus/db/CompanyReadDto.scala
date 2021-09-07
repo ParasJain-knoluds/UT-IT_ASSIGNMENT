@@ -7,8 +7,8 @@ import scala.collection.immutable.HashMap
 class CompanyReadDto {
 
   val knoldusCompany: Company = Company("Knoldus", "knoldus@gmail.com", "Noida")
-  val philipsCompany: Company = Company("Philips", "philips123@gmail.com", "Noida")
-  val companies: HashMap[String, Company] = HashMap("Knoldus" -> knoldusCompany, "Philips" -> philipsCompany)
+  val facebookCompany: Company = Company("facebook", "facebook556@gmail.com", "Noida")
+  val companies: HashMap[String, Company] = HashMap("Knoldus" -> knoldusCompany, "facebook" -> facebookCompany)
 
   def getCompanyByName(name: String): Option[Company] = companies.get(name)
 
